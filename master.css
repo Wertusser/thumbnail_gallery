@@ -1,0 +1,89 @@
+/* Prevent vertical gaps */
+
+p {
+  text-align: center;
+}
+
+.header {
+  font-size: 10vw;
+  font-weight: normal;
+  text-align: center;
+}
+
+.caption {
+  font-size: 3vw;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+body {
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #f2f2f2;
+  border-radius: 10px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 10px;
+}
+
+.frame-1 {
+  border-image: url('img/frame-1.png') 145 141 146 139 stretch stretch;
+}
+
+.frame-2 {
+  border-image: url('img/frame-2.png') 89 stretch stretch;
+}
+
+.frame-3 {
+  border-image: url('img/frame-6.png') 123 112 126 120 stretch stretch;
+}
+
+.frame-4 {
+  border-image: url('img/frame-4.png') 69 70 67 72 stretch stretch;
+}
+
+.frame-5 {
+  border-image: url('img/frame-5.png') 121 144 119 143 round stretch;
+}
+
+/* .frame-6 {
+  border-image: url('frames/frame-3.png') 165 118 165 124 stretch stretch;
+} */
+
+.frame-6 {
+  border-image: url('img/frame-3.png') 51 57 50 56 round stretch;
+}
+
+#gallery img {
+  width: 60% !important;
+  height: auto !important;
+  border-color: #f4be52;
+  border-style: inset;
+  border-width: 60px;
+  display: block;
+  background-color: #f2f2f2;
+  margin: 0 auto 100px auto;
+}
+
+@media all and (max-width: 500px) {
+  img {
+    border-width: 0px;
+    width: 100%;
+  }
+  p {
+    font-size: 6vh;
+  }
+}
